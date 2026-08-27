@@ -7,17 +7,22 @@
 </head>
 <style>
 body {
-  margin: 0;
+  margin: auto;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f5f5f5;
+  background-color: #ffffff;
 }
 
 .topnav {
   overflow: hidden;
-  background-color: #1654e3;
+  background-color: rgba(22, 83, 227, 0.792);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   display: flex;
   justify-content: center;
+  align-items: center;
   padding-inline: 30px;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
 }
 
 .topnav p {
@@ -27,6 +32,7 @@ body {
     padding-left: 10px;
     
     font-weight: bolder;
+    line-height: 100%;
 }
 
 .topnav a {
@@ -40,8 +46,12 @@ body {
 
 .topnav img {
     float: left;
-    width: 10%;
-    height: 10%;
+    max-width: 8vh;
+    max-height: 8vh;
+    padding: 2vh;
+
+    object-fit: contain;
+
 }
 
 .topnav a:hover {
@@ -53,6 +63,20 @@ body {
   background-color: #04AA6D;
   color: white;
 }
+
+
+/* Under is the section 1 stuff */
+
+.Sect1 {
+    background: url("stock_bg.jpg");
+    background-size: cover;
+    height: 70vh;
+}
+.Sect1 h2 {
+    margin: auto;
+}
+
+
 </style>
 
 <body>
@@ -66,8 +90,8 @@ body {
   <a href="#about">About</a>
 </div>
 
-<div style="padding-left:16px">
-  <h2>Top Navigation Example</h2>
+<div class="Sect1" style="padding-left:16px">
+  <h2>Some stuff down here..</h2>
   <p>Some content..</p>
 </div>
 
