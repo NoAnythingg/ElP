@@ -20,8 +20,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  right: 20px;
   padding-inline: 30px;
-  border-radius: 0 0 15px 15px;
+  border-radius: 15px 15px 15px 15px;
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
 }
 
@@ -69,14 +73,22 @@ body {
 
 .Sect1 {
     background: url("stock_bg.jpg");
-    background-size: cover;
-    height: 70vh;
-}
-.Sect1 h2 {
-    margin: auto;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    height: 80vh;
+    padding-left: 10vh;
 
+    color: #ffffff;
+    font-weight: bolder;
+}
 </style>
 
 <body>
@@ -91,8 +103,11 @@ body {
 </div>
 
 <div class="Sect1" style="padding-left:16px">
-  <h2>Some stuff down here..</h2>
-  <p>Some content..</p>
+    <div class="infoContainer">
+        <h2 style="margin: 0;">We are EL POWER!</h2>
+        <p>Some content about us right here..</p>
+        Blah blah blah blah
+    </div>
 </div>
 
 </body>
