@@ -8,12 +8,18 @@
 <style>
 body {
   margin: auto;
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: #ffffff;
 }
 
 .htmlSpacing {
   height: 1vh;
+}
+
+.textOrder {
+  display: flex;
+  flex-direction: column;
 }
 
 .topnav {
@@ -88,6 +94,10 @@ body {
   background-color: rgba(86, 114, 178, 0.459);
 }
 
+.Sect3 {
+  background-color: #cbcac5;
+}
+
 .infoContainer {
     display: flex;
     flex-direction: column;
@@ -98,23 +108,26 @@ body {
 
     color: #ffffff;
     font-weight: bolder;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-shadow: 0.05em 0 black, 0 0.05em black, -0.05em 0 black, 0 -0.05em black, -0.05em -0.05em black, -0.05em 0.05em black, 0.05em -0.05em black, 0.05em 0.05em black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    text-shadow: 0px 2px 10px rgba(0, 0, 0, 1);
 }
 
 .slideContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  gap: 50px;
 }
 
-.slideContainer h3, .slideContainer h2, .slideContainer h1, .slideContainer p{
-  flex: 1;
+.slideContainer h3, .slideContainer p{
   margin-right: 20px;
   color: #272727;
+  /* font-size: 30px; */ /* Dont set everythig to that size, its stupid!*/
+
 }
 .slideContainer img {
-  /* max-width: 300px; */
   width: 30%;
   right: 20px;
   padding: 20px;
@@ -122,6 +135,23 @@ body {
 }
 
 /* Above is the section 1 stuff */
+
+.end-contact {
+  /* height: 200px; */
+  padding-top: 10px;
+  background-color: rgb(0, 84, 157);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+
+  color: #fff;
+}
+
+.end-contact img {
+  max-width: 30vh;
+}
 
 </style>
 
@@ -141,7 +171,7 @@ body {
 
 <div class="Sect1" style="padding-left:16px">
     <div class="infoContainer">
-        <h1 style="margin: 0;">We are EL POWER!</h1>
+        <h1 style="margin: 0;">Välkommen till EL POWER HS AB</h1>
         <p>Some content about us right here..</p>
         Blah blah blah blah
     </div>
@@ -149,12 +179,46 @@ body {
 
 <div class="htmlSpacing"></div>
 
-<div class="Sect2" style="padding-left:16px;">
+
+<div class="Sect2">
   <div class="slideContainer">
-    <h3>A little information about what we do here</h3>
-    
+    <div class="textOrder" style="padding-left: 50px;">
+      <h3 style="margin: 0; font-size: 30px;">Showcase work enviroment</h3>
+      <p style="margin-top: 12px; max-width: 50vh;">
+        something something, very cool company something
+        blah blah blah more text just to see how the size would look like
+        when placed into the container
+      </p>
+    </div>
+
     <img src="media/Sect2_slide_bg.jpg" alt="">
   </div>
+</div>
+
+
+<div class="htmlSpacing"></div>
+
+<div class="Sect3" style="padding-left:16px;">
+  <div class="slideContainer">
+    <img src="media/Sect3_bg.jpg" alt="">
+    <div class="textOrder" style="padding-right: 100px;">
+      <h3 style="margin: 0; font-size: 30px;">Showcase effectiveness</h3>
+      <p style="margin-top: 12px; max-width: 50vh;">
+        something something, very cool company something
+        blah blah blah more text just to see how the size would look like
+        when placed into the container
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="Sect4">
+
+</div>
+
+<div class="end-contact">
+  <img src="logo_transparent.png" alt="">
+  <h3>EL POWER HS AB  - All Rights Reserved 2024-2026 ©</h3>
 </div>
 
 </body>
