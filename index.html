@@ -105,11 +105,25 @@ body {
     text-shadow: 0px 2px 10px rgba(0, 0, 0, 1);
 }
 
-.Sect2 {
-  background-color: rgba(86, 114, 178, 0.459);
+.Auktoriserade-elektriker-sect {
+  background-color:#171717;
+  padding: 50px;
+}
+
+.CenterInformationContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: rgb(239, 246, 39);
 }
 
 .Sect3 {
+  background-color: rgba(86, 114, 178, 0.459);
+}
+
+.Sect4 {
   background-color: #cbcac5;
 }
 
@@ -162,7 +176,7 @@ body {
   <img src="logo_transparent horizontal.png" alt="" width="250vh">
 
   <a href="index.html">Startsida</a>
-  <a href="services.html">Våra Tjänster</a>
+  <a href="Våra tjänster.html">Våra Tjänster</a>
   <a href="contacts.html">Kontakt</a>
   <a href="#about">Om oss</a>
 </div>
@@ -170,15 +184,14 @@ body {
 <div class="Sect1" style="padding-left:16px">
     <div class="infoContainer">
         <h1 style="margin: 0;">Välkommen till EL POWER HS AB</h1>
-        <p>Some content about us right here..</p>
-        Blah blah blah blah
+        <!-- <p>Some content about us right here..</p> -->
+        <!-- Blah blah blah blah -->
     </div>
 </div>
 
 <div class="htmlSpacing"></div>
 
-
-<div class="Sect2">
+<div class="Sect3">
   <div class="slideContainer">
     <div class="textOrder">
       <h3 style="margin: 0; font-size: 30px;">Showcase work enviroment</h3>
@@ -193,10 +206,9 @@ body {
   </div>
 </div>
 
-
 <div class="htmlSpacing"></div>
 
-<div class="Sect3">
+<div class="Sect4">
   <div class="slideContainer">
     <img src="media/Sect3_bg.jpg" alt="">
     <div class="textOrder">
@@ -210,9 +222,28 @@ body {
   </div>
 </div>
 
-<!-- <div class="Sect4">
+<div class="htmlSpacing"></div>
 
-</div> -->
+<div class="Auktoriserade-elektriker-sect">
+  <div class="CenterInformationContainer">
+      <h1>──── Auktoriserade elektriker ────</h1>
+      <div style="display: flex; gap: 150px; margin-right: 50px;">  
+        <ul>
+          <li><p style="color: rgba(66, 118, 238, 1);">Markmätarskåp</p></li>
+          <li><p>El-service</p></li>
+          <li><p style="color: rgba(66, 118, 238, 1);">El-centraler</p></li>
+          <li><p>Belysning</p></li>
+        </ul>
+        <ul>
+          <li><p>Smarta hem</p></li>
+          <li><p style="color: rgba(66, 118, 238, 1);">Total entrepenader</p></li>
+          <li><p>Fastigheter</p></li>
+          <li><p style="color: rgba(66, 118, 238, 1);">Laddboxar & laddstationer</p></li>
+        </ul>
+      </div>
+      <h1></h1> <!-- Leave it here, it works as padding -->
+  </div>
+</div>
 
 <div class="end-contact">
   <img src="logo_transparent.png" alt="">
