@@ -24,6 +24,7 @@
             display: flex;
             align-items: center;
             padding: 10px 30px;
+            background-color: rgba(22, 83, 227, 0.8);
             backdrop-filter: blur(10px);
             border-radius: 15px;
             box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
@@ -40,11 +41,150 @@
             font-size: 17px;
         }
         .topnav a:hover {
-            background: ;
+            background: white;
+            text-decoration: none;
+        }
+
+        .servicesHeader {
+            min-height: 50vh;
+
+            background: 
+                linear-gradient(rgba(10, 30, 70, 0.78),
+                                rgba(10, 30, 70, 0.78)),
+                url("media/Sect1_bg.jpg");
+            background-size: cover;
+            background-position: center;
+
+            display: flex;
+            flex-direction: column;
+            
+            padding-left: 10%;
+            padding-top: 1px;
+            color: white;
+        }
+        .servicesHeader h1 {
+            margin: 0;
+            font-size: clamp(55px, 9vw, 110px);
+            letter-spacing: -3px;
+        }
+        .servicesHeader p {
+            max-width: 600px;
+            font-size: 18px;
+            line-height: 1.6;
+            color: #e3e8f2;
+        }
+        .servicesHeader h1, .servicesHeader p {
+            transform: translateY(120px);
+        }
+        .services {
+            width: 80%;
+            max-width: 1100px;
+            margin: 60px auto;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+        .service {
+            background: white;
+            padding: 30px;
+            border-left: 5px solid #1653e3;
+            border-radius: 6px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            transition: 0.2s;
+        }
+        .service:hover {
+            transform: translateY(-4px);
+        }
+        .serviceNumber {
+            color: #1653e3;
+            font-size: 12px;
+            letter-spacing: 2px;
+            margin-bottom: 12px;
+        }
+        .service h2 {
+            margin: 0 0 10px;
+            color: #123b91;
+        }
+        .service p {
+            margin: 0;
+            color: #626a75;
+            line-height: 1.6;
         }
     </style>
 </head>
 <body>
-    
+    <div class="topnav">
+        <img src="logo_transparent horizontal.png" alt="EL POWER HS AB">
+        <a href="index.html">startsida</a>
+        <a href="Våra tjänster.html">Tjänster</a>
+        <a href="about.html">Om oss</a>
+        <a href="contacts.html">Kontakt</a>
+    </div>
+    <section class="servicesHeader">
+        <h1>TJÄNSTER</h1>
+
+        <p>
+            Vi hjälper dig med elinstallationer, service och elektriska lösningar för hem och företag.
+        </p>
+    </section>
+
+    <section class="services">
+        <div class="service">
+            <div class="serviceNumber">
+                01  INSTALLATION
+            </div>
+            <h2>elinstallationer</h2>
+
+            <p>
+                Installation och arbete med elektriska system för bostäder, lokaler och andra projekt.
+            </p>
+        </div>
+        <div class="service">
+            <div class="serviceNumber">
+                02  BELYSNING
+            </div>
+            <h2>belysning</h2>
+            <p>
+                Installation och anpassning av belysning för både inomhus- och utomhusmiljöer.
+            </p>
+        </div>
+        <div class="service">
+            <div class="serviceNumber">
+                03  SERVICE
+            </div>
+            <h2>Service & felsökning</h2>
+            <p>
+                Felsökning, reparation och service när något inte fungerar som det ska.
+            </p>
+        </div>
+        <div class="service">
+            <div class="serviceNumber">
+                04  PROJEKT
+            </div>
+            <h2>Nybyggnation & renovering</h2>
+            <p>
+                elinstallationer vid renovering, ombyggnationer och nybyggnationer.
+            </p>
+        </div>
+        <div class="service">
+            <div class="serviceNumber">
+                05  UTBILDNING
+            </div>
+            <h2>Akademsik utbildning</h2>
+            <p>Vi erbjuder kundskap och utbildning inom elteknik och elektriska installationer</p>
+        </div>
+        <div class="service">
+            <div class="serviceNumber">
+                06  ERBJUDANDE
+            </div>
+            <h2>
+                ROT-avdrag & grön teknik
+            </h2>
+            <p>
+                Vi hjälper dig att förstå vilka möjligheter som kan finnas för ROT-avdrag och skattereduktion för grön teknik
+            </p>
+        </div>
+    </section>
 </body>
 </html>
