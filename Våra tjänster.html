@@ -39,6 +39,7 @@
             text-decoration: none;
             padding: 14px 16px;
             font-size: 17px;
+            transition: 0.2s;
         }
         .topnav a:hover {
             background: white;
@@ -51,7 +52,7 @@
             background: 
                 linear-gradient(rgba(10, 30, 70, 0.78),
                                 rgba(10, 30, 70, 0.78)),
-                url("logo.png");
+                url("media/sect1_bg.jpg");
             background-size: cover;
             background-position: center;
 
@@ -66,16 +67,16 @@
             margin: 0;
             font-size: clamp(55px, 9vw, 110px);
             letter-spacing: -3px;
+            transform:  translateY(120px);
         }
         .servicesHeader p {
             max-width: 600px;
             font-size: 18px;
             line-height: 1.6;
             color: #e3e8f2;
-        }
-        .servicesHeader h1, .servicesHeader p {
             transform: translateY(120px);
         }
+        
         .services {
             width: 80%;
             max-width: 1100px;
@@ -86,25 +87,41 @@
             gap: 25px;
         }
         .service {
+            display: grid;
+            grid-template-columns: 180px 1fr;
+            min-height: 210px;
             background: white;
             padding: 30px;
             border-left: 5px solid #1653e3;
             border-radius: 6px;
+            overflow: hidden;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
             transition: 0.2s;
         }
         .service:hover {
-            transform: translateY(-4px);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+        }
+        .service img {
+            width: 100%;
+            height: 100%;
+            min-height: 210%;
+            object-fit: cover;
+        }
+        .serviceConent {
+            padding: 25px;
         }
         .serviceNumber {
             color: #1653e3;
             font-size: 12px;
+            font-weight: bold;
             letter-spacing: 2px;
             margin-bottom: 12px;
         }
         .service h2 {
             margin: 0 0 10px;
             color: #123b91;
+            font-size: 12px;
         }
         .service p {
             margin: 0;
@@ -123,67 +140,108 @@
     </div>
     <section class="servicesHeader">
         <h1>TJÄNSTER</h1>
-
         <p>
-            Vi hjälper dig med elinstallationer, service och elektriska lösningar för hem och företag.
+            Vi hjälper dig med elinstallationer, service och
+            elektriska lösningar för hem och företag.
         </p>
     </section>
-
     <section class="services">
         <div class="service">
-            <div class="serviceNumber">
-                01  INSTALLATION
+            <img src="peopleImage.png"
+                 alt="Elinstallation">
+            <div class="serviceContent">
+                <div class="serviceNumber">
+                    01 &nbsp; INSTALLATION
+                </div>
+                <h2>
+                    Elinstallationer
+                </h2>
+                <p>
+                    Installation och arbete med elektriska system
+                    för bostäder, lokaler och andra projekt.
+                </p>
             </div>
-            <h2>elinstallationer</h2>
-
-            <p>
-                Installation och arbete med elektriska system för bostäder, lokaler och andra projekt.
-            </p>
         </div>
         <div class="service">
-            <div class="serviceNumber">
-                02  BELYSNING
+            <img src="chan.png"
+                 alt="Belysning">
+            <div class="serviceContent">
+                <div class="serviceNumber">
+                    02 &nbsp; BELYSNING
+                </div>
+                <h2>
+                    Belysning
+                </h2>
+                <p>
+                    Installation och anpassning av belysning
+                    för både inomhus- och utomhusmiljöer.
+                </p>
             </div>
-            <h2>belysning</h2>
-            <p>
-                Installation och anpassning av belysning för både inomhus- och utomhusmiljöer.
-            </p>
         </div>
         <div class="service">
-            <div class="serviceNumber">
-                03  SERVICE
+            <img src="manypeople.png"
+                 alt="Service och felsökning">
+            <div class="serviceContent">
+                <div class="serviceNumber">
+                    03 &nbsp; SERVICE
+                </div>
+                <h2>
+                    Service & felsökning
+                </h2>
+                <p>
+                    Felsökning, reparation och service när något
+                    inte fungerar som det ska.
+                </p>
             </div>
-            <h2>Service & felsökning</h2>
-            <p>
-                Felsökning, reparation och service när något inte fungerar som det ska.
-            </p>
         </div>
         <div class="service">
-            <div class="serviceNumber">
-                04  PROJEKT
+            <img src="Pj.png"
+                 alt="Nybyggnation och renovering">
+            <div class="serviceContent">
+                <div class="serviceNumber">
+                    04 &nbsp; PROJEKT
+                </div>
+                <h2>
+                    Nybyggnation & renovering
+                </h2>
+                <p>
+                    Elinstallationer vid renovering,
+                    ombyggnationer och nybyggnationer.
+                </p>
             </div>
-            <h2>Nybyggnation & renovering</h2>
-            <p>
-                elinstallationer vid renovering, ombyggnationer och nybyggnationer.
-            </p>
         </div>
         <div class="service">
-            <div class="serviceNumber">
-                05  UTBILDNING
+            <img src="Hs.png"
+                 alt="Utbildning inom elteknik">
+            <div class="serviceContent">
+                <div class="serviceNumber">
+                    05 &nbsp; UTBILDNING
+                </div>
+                <h2>
+                    Akademisk utbildning
+                </h2>
+                <p>
+                    Vi erbjuder kunskap och utbildning inom
+                    elteknik och elektriska installationer.
+                </p>
             </div>
-            <h2>Akademsik utbildning</h2>
-            <p>Vi erbjuder kundskap och utbildning inom elteknik och elektriska installationer</p>
         </div>
         <div class="service">
-            <div class="serviceNumber">
-                06  ERBJUDANDE
+            <img src="removinghouse.png"
+                 alt="Solceller och grön teknik">
+            <div class="serviceContent">
+                <div class="serviceNumber">
+                    06 &nbsp; ERBJUDANDE
+                </div>
+                <h2>
+                    ROT-avdrag & grön teknik
+                </h2>
+                <p>
+                    Vi hjälper dig att förstå vilka möjligheter
+                    som kan finnas för ROT-avdrag och
+                    skattereduktion för grön teknik.
+                </p>
             </div>
-            <h2>
-                ROT-avdrag & grön teknik
-            </h2>
-            <p>
-                Vi hjälper dig att förstå vilka möjligheter som kan finnas för ROT-avdrag och skattereduktion för grön teknik
-            </p>
         </div>
     </section>
 </body>
