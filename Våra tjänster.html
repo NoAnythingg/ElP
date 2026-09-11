@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tjänster | EL POWER HS AB</title>
-
     <style>
+
         * {
             box-sizing: border-box;
         }
+
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
             background: #f5f7fb;
             color: #20242b;
         }
-
         .topnav {
             position: absolute;
             top: 15px;
@@ -27,7 +27,8 @@
             background-color: rgba(22, 83, 227, 0.8);
             backdrop-filter: blur(10px);
             border-radius: 15px;
-            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+            box-shadow:
+                0 3px 15px rgba(0, 0, 0, 0.15);
             z-index: 10;
         }
         .topnav img {
@@ -43,23 +44,21 @@
         }
         .topnav a:hover {
             background: white;
-            text-decoration: none;
             color: #20242b;
         }
-
         .servicesHeader {
             min-height: 50vh;
 
-            background: 
-                linear-gradient(rgba(10, 30, 70, 0.78),
-                                rgba(10, 30, 70, 0.78)),
+            background:
+                linear-gradient(
+                    rgba(10, 30, 70, 0.78),
+                    rgba(10, 30, 70, 0.78)
+                ),
                 url("media/sect1_bg.jpg");
             background-size: cover;
             background-position: center;
-
             display: flex;
             flex-direction: column;
-            
             padding-left: 10%;
             padding-top: 1px;
             color: white;
@@ -68,7 +67,7 @@
             margin: 0;
             font-size: clamp(55px, 9vw, 110px);
             letter-spacing: -3px;
-            transform:  translateY(120px);
+            transform: translateY(120px);
         }
         .servicesHeader p {
             max-width: 600px;
@@ -77,12 +76,10 @@
             color: #e3e8f2;
             transform: translateY(120px);
         }
-        
         .services {
             width: 80%;
             max-width: 1100px;
             margin: 60px auto;
-
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 25px;
@@ -90,27 +87,33 @@
         .service {
             display: grid;
             grid-template-columns: 180px 1fr;
-            min-height: 210px;
+            height: 260px;
             background: white;
-            padding: 30px;
+            padding: 0;
             border-left: 5px solid #1653e3;
             border-radius: 6px;
             overflow: hidden;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            box-shadow:
+                0 5px 20px rgba(0, 0, 0, 0.08);
             transition: 0.2s;
         }
         .service:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+            box-shadow:
+                0 10px 25px rgba(0, 0, 0, 0.12);
         }
         .service img {
-            width: 100%;
-            height: 100%;
-            min-height: 210%;
-            object-fit: cover;
+            width: 180px;
+            height: 260px;
+            object-fit: contain;
+            object-position: center;
+            padding: 10px;
         }
-        .serviceConent {
+        .serviceContent {
             padding: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
         .serviceNumber {
             color: #1653e3;
@@ -122,25 +125,72 @@
         .service h2 {
             margin: 0 0 10px;
             color: #123b91;
-            font-size: 12px;
+            font-size: 24px;
         }
         .service p {
             margin: 0;
             color: #626a75;
             line-height: 1.6;
         }
+
+
+        /* =========================
+           TABLET
+        ========================= */
+
+        @media (max-width: 800px) {
+
+            .topnav {
+                left: 20px;
+                right: 20px;
+
+                padding: 10px 15px;
+            }
+
+            .topnav img {
+                width: 180px;
+            }
+
+            .topnav a {
+                padding: 10px 8px;
+                font-size: 14px;
+            }
+
+
+            .services {
+                width: 90%;
+
+                grid-template-columns: 1fr;
+            }
+        }
+
     </style>
 </head>
+
+
 <body>
     <div class="topnav">
-        <img src="logo_transparent horizontal.png" alt="EL POWER HS AB">
-        <a href="index.html">startsida</a>
-        <a href="Våra tjänster.html">Tjänster</a>
-        <a href="about.html">Om oss</a>
-        <a href="contacts.html">Kontakt</a>
+        <img
+            src="logo_transparent horizontal.png"
+            alt="EL POWER HS AB"
+        >
+        <a href="index.html">
+            startsida
+        </a>
+        <a href="Våra tjänster.html">
+            Tjänster
+        </a>
+        <a href="about.html">
+            Om oss
+        </a>
+        <a href="contacts.html">
+            Kontakt
+        </a>
     </div>
     <section class="servicesHeader">
-        <h1>TJÄNSTER</h1>
+        <h1>
+            TJÄNSTER
+        </h1>
         <p>
             Vi hjälper dig med elinstallationer, service och
             elektriska lösningar för hem och företag.
@@ -148,8 +198,10 @@
     </section>
     <section class="services">
         <div class="service">
-            <img src="peopleImage.png"
-                 alt="Elinstallation">
+            <img
+                src="peopleImage.png"
+                alt="Elinstallation"
+            >
             <div class="serviceContent">
                 <div class="serviceNumber">
                     01 &nbsp; INSTALLATION
@@ -164,8 +216,10 @@
             </div>
         </div>
         <div class="service">
-            <img src="chan.png"
-                 alt="Belysning">
+            <img
+                src="chan.png"
+                alt="Belysning"
+            >
             <div class="serviceContent">
                 <div class="serviceNumber">
                     02 &nbsp; BELYSNING
@@ -180,8 +234,10 @@
             </div>
         </div>
         <div class="service">
-            <img src="manypeople.png"
-                 alt="Service och felsökning">
+            <img
+                src="manypeople.png"
+                alt="Service och felsökning"
+            >
             <div class="serviceContent">
                 <div class="serviceNumber">
                     03 &nbsp; SERVICE
@@ -196,8 +252,10 @@
             </div>
         </div>
         <div class="service">
-            <img src="Pj.png"
-                 alt="Nybyggnation och renovering">
+            <img
+                src="Pj.png"
+                alt="Nybyggnation och renovering"
+            >
             <div class="serviceContent">
                 <div class="serviceNumber">
                     04 &nbsp; PROJEKT
@@ -212,8 +270,10 @@
             </div>
         </div>
         <div class="service">
-            <img src="Hs.png"
-                 alt="Utbildning inom elteknik">
+            <img
+                src="Hs.png"
+                alt="Utbildning inom elteknik"
+            >
             <div class="serviceContent">
                 <div class="serviceNumber">
                     05 &nbsp; UTBILDNING
@@ -227,9 +287,12 @@
                 </p>
             </div>
         </div>
+
         <div class="service">
-            <img src="removinghouse.png"
-                 alt="Solceller och grön teknik">
+            <img
+                src="removinghouse.png"
+                alt="Solceller och grön teknik"
+            >
             <div class="serviceContent">
                 <div class="serviceNumber">
                     06 &nbsp; ERBJUDANDE
