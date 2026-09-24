@@ -82,7 +82,6 @@
     }
 
 
-    /* CONTACT HERO */
 
     .contactHeader {
 
@@ -131,36 +130,33 @@
     }
 
 
-    /* CONTACT CONTENT */
 
-    .contactContent {
+.contactContent {
+    display: flex;
+    justify-content: center;
+    padding: 60px 10%;
+}
 
-        display: flex;
+.contactBox {
+    background: white;
 
-        gap: 30px;
+    padding: 30px;
 
-        padding: 60px 10%;
-    }
+    width: 50%;
+    min-height: 350px;
 
-    .contactBox {
+    border-radius: 8px;
 
-        background: white;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
 
-        padding: 30px;
+    text-align: center;
+}
 
-        flex: 1;
-
-        border-radius: 8px;
-
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-    }
-
-    .contactBox h2 {
-        margin-top: 0;
-    }
+.contactBox h2 {
+    margin-top: 0;
+}
 
 
-    /* FORM */
 
     input,
     textarea {
@@ -240,44 +236,6 @@
 
 
     <section class="contactContent">
-
-
-        <div class="contactBox">
-
-            <h2>
-                Skicka en förfrågan
-            </h2>
-
-            <form>
-
-                <input
-                    type="text"
-                    placeholder="Namn"
-                    required
-                >
-
-                <input
-                    type="email"
-                    placeholder="E-post"
-                    required
-                >
-
-                <input
-                    type="tel"
-                    placeholder="Telefon"
-                >
-
-                <textarea
-                    placeholder="Vad behöver du hjälp med?"
-                ></textarea>
-
-                <button type="submit">
-                    SKICKA FÖRFRÅGAN
-                </button>
-
-            </form>
-
-        </div>
 
 
         <div class="contactBox">
