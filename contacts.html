@@ -93,14 +93,11 @@
                 rgba(10, 30, 70, 0.78)
             ),
             url("media/sect1_bg.jpg");
-
         background-size: cover;
         background-position: center;
-
         display: flex;
         flex-direction: column;
         justify-content: center;
-
         padding-left: 10%;
         padding-top: 40px;
 
@@ -129,34 +126,34 @@
         color: #e3e8f2;
     }
 
+    .contactContent {
+
+        display: flex;
+
+        gap: 30px;
+
+        padding: 60px 10%;
+    }
+
+    .contactBox {
+
+        background: white;
+
+        padding: 30px;
+
+        flex: 1;
+
+        border-radius: 8px;
+
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .contactBox h2 {
+        margin-top: 0;
+    }
 
 
-.contactContent {
-    display: flex;
-    justify-content: center;
-    padding: 60px 10%;
-}
-
-.contactBox {
-    background: white;
-
-    padding: 30px;
-
-    width: 50%;
-    min-height: 350px;
-
-    border-radius: 8px;
-
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-
-    text-align: center;
-}
-
-.contactBox h2 {
-    margin-top: 0;
-}
-
-
+    /* FORM */
 
     input,
     textarea {
@@ -236,6 +233,44 @@
 
 
     <section class="contactContent">
+
+
+        <div class="contactBox">
+
+            <h2>
+                Skicka en förfrågan
+            </h2>
+
+            <form>
+
+                <input
+                    type="text"
+                    placeholder="Namn"
+                    required
+                >
+
+                <input
+                    type="email"
+                    placeholder="E-post"
+                    required
+                >
+
+                <input
+                    type="tel"
+                    placeholder="Telefon"
+                >
+
+                <textarea
+                    placeholder="Vad behöver du hjälp med?"
+                ></textarea>
+
+                <button type="submit">
+                    SKICKA FÖRFRÅGAN
+                </button>
+
+            </form>
+
+        </div>
 
 
         <div class="contactBox">
